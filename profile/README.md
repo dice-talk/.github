@@ -1,12 +1,10 @@
 # 다이스톡
 
 ## 프로젝트 소개
-
-- 일상 기록과 분석을 위한 모바일 애플리케이션
-- Android 전용 앱
-- React Native/Expo 기반 개발
-- 
-- 개발 기간 : 약 1 개월
+다이스톡은 익명성을 기반으로 사용자들이 자유롭게 소통할 수 있는 모바일 채팅 애플리케이션입니다. React Native/Expo 기반의 크로스플랫폼 앱으로 개발되었으며, 사용자들에게 빠르고 혁신적이며 안전한 채팅 경험을 제공하는 데 집중했습니다.
+- 타입: 익명성 기반 채팅 및 소셜링 모바일 애플리케이션
+- 플랫폼: React Native/Expo 기반의 Android 앱
+- 개발 기간 : 약 2개월
 - 배포: EAS Build를 통한 APK 파일 배포(스토어 미배포)
 - Repo : https://github.com/dice-talk
 
@@ -14,7 +12,7 @@
 
 | 강민지 | 구본석 | 남택호 [팀장]                                                 | 여승아                                                 |
 |--|--|-----------------------------------------------------|-----------------------------------------------------|
-| <img src="/assets/members/Kang.jpg" width="100px"/> | <img src="/assets/members/Koo.jpg" width="100px" /> | <img src="/assets/members/Nam.jpg" width="100px" /> | <img src="/assets/members/Yeo.png" width="100px" /> |
+| <img src="/assets/members/Kang.jpg" width="100px"/> | <img src="/assets/members/Koo.jpg" width="100px" /> | <img src="/assets/members/Nam.jpg" width="100px" /> | <img src="/assets/members/Yeo.jpg" width="100px" /> |
 | [@KangMinJi](https://github.com/minggiK) | [@6feetlife](https://github.com/6feetlife) | [@NamTaekHo](https://github.com/NamTaekHo)          | [@YeoSeungA](https://github.com/YeoSeungA )         |
 
 ## 🏗️ 프로젝트 아키텍처
@@ -26,7 +24,7 @@
 ### Frontend
 
 - **Languages / Frameworks**: TypeScript, React Native, React, Expo
-- **State Management**: Zustand
+- **State Management**: Zustand, TanStack Query
 - **Networking**: Axios
 - **Styling**: StyleSheet, Tailwind CSS
 - **Build & Deployment**: EAS, Expo Go
@@ -66,6 +64,7 @@
 
   <!-- State Management & API -->
   <img src="https://img.shields.io/badge/Zustand-764ABC?style=for-the-badge&logo=Redux&logoColor=white">
+  <img src="https://img.shields.io/badge/TanStack_Query-FF4154?style=for-the-badge&logo=reactquery&logoColor=white">
   <img src="https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white">
   <br>
 
@@ -152,43 +151,23 @@
 
 
 ## 📌 주요 기능 
-### 1. 
+### 1. WebSocket을 사용한 실시간 채팅 구현
 
-- 
-    - 
-    - 
-    - 
-- 
-    - 
-    - 
-    - 
-    - 
-    - 
+### 2. Toss Payments 연동 (본인인증 및 결제)
 
-### 2. 
+- 본인인증: 아이디/비밀번호 찾기 프로세스에 Toss Payments의 본인인증 기능을 연동하여 사용자 계정의 보안을 강화했습니다.
+- 결제 시스템 심화 구현: React Native 환경에서 Toss Payments 결제 연동 시 발생하는 복잡한 문제들을 해결하고 안정적인 결제 시스템을 구축했습니다.
 
-- 
-    - 
-    - 
-    - 
-- 
-    - 
-    - 
-    - 
+### 3. 푸시 알림 시스템 구현 
+- Expo Push Notification을 활용하여 새로운 메시지, 공지사항 등 다양한 이벤트에 대한 실시간 푸시 알림 기능을 프론트엔드와 백엔드에 걸쳐 구현했습니다.
 
-### 3. 
+### 4. 자동 로그인 및 사용자 세션 관리 
+- 토큰 기반 인증 구현: AccessToken과 RefreshToken을 활용한 JWT(JSON Web Token) 기반의 인증 시스템을 구현했습니다. 로그인 시 서버로부터 발급받은 토큰을 AsyncStorage에 안전하게 저장하여 사용자 세션을 유지합니다.
 
-- 
-    - 
-    - 
-    - 
 
-### 4. 알림 기능
+### 5.
 
-- 알림 설정 관리
-- 알림 권한 관리
-
-### 5. 기타 기능
+### 6. 기타 기능
 
 - QnA
     - 사용자 문의 작성
@@ -306,24 +285,35 @@
 
 
 ### 여승아
-[앱 기능 구현(이슈카드 관리, 일상 분석, QnA, 공지사항, 프로필 관리)]
+[앱 기능 구현(QnA, 공지사항, 프로필 관리), 알림 시스템, 상태관리, 빌드 및 배포]
+
+> ### Toss Payments 연동(본인인증 및 결제) [FE]
+- Toss Payments 본인인증 기능 연동
+- 복잡한 결제 시스템 심화 구현
+- WebView 및 외부 앱 연동 문제 해결
+- Android queries 설정 및 네이티브 빌드 이해
+- 커스텀 URL 스킴을 이용한 딥링킹 구현
 
 > ### 알림 시스템 [FE, BE]
 
 - 푸시 알림 시스템 설계 및 구현
-    - Expo Notifications 활용
-    - 알림 권한 관리
-    - 알림 설정 관리
-    - 알림 트리거 시스템
-    - 알림 상태 관리
+    - Expo Notifications를 활용한 푸시 알림 시스템 설계 및 구현
+    - 알림 권한 및 설정 관리
+    - 알림 트리거 시스템 및 상태관리
+    - 알림 기반 화면 이동(딥링킹)
+
+> ### 자동 로그인 및 사용자 세션 관리 [FE]
+
+- Zustnad를 활용한 전역상태 관리 
+- Expo Router와 연동한 초기 라우팅 처리
  
 > ### 상태 관리 [FE]
 
 - Zustand를 활용한 전역 상태 관리 시스템 설계 및 구현
     - 상태 구조 설계
-    - 상태 업데이트 로직
-    - 상태 지속성 관리
-    - 상태 관리 모듈화
+    - 업데이트 로직
+    - 지속성 관리
+    - 모듈화
 
 > ### 빌드 및 배포 [FE, BE]
 
@@ -332,6 +322,28 @@
     - 환경 변수 관리
     - 빌드 최적화
     - 앱 서명 설정
+
+> ### 채팅 신고 기능 개발 [FE]
+
+- API 연동 및 데이터 관리
+    - 페이지네이션 응답 파싱
+    - 파라미터 동적 관리
+- 동적 신고 사유 연동
+- 신고 제출 로직 완성 및 UX 개선
+
+> ### 교환 내역(History)기능 개선 [FE]
+
+- HistoryItem 컴포넌트 리팩토링을 통한 동적 UI 구현
+- 사용자 경험(UX)개선
+    - 삭제 아이콘 제거
+    - Long Press 삭제 확인 모달
+
+> ### Git 버전 관리 및 충돌 해결 [FE]
+
+- LFS 문제 해결
+    - git filter-branch, force push
+- 이미지 파일 중복으로 인한 병합 충돌 해결
+    - --ours 옵션, git add
 
 > ### QnA [FE]
 
@@ -388,4 +400,19 @@
 
 
 ### 여승아
+- 이번 DiceTalk 프로젝트를 통해 TypeScript와 React Native 환경에서의 상태 관리와 서버 통신에 대한 깊이 있는 이해를 체득했습니다. 특히, Zustand를 이용한 전역 상태 관리와 TanStack Query를 활용한 서버 상태(캐싱, 동기화) 관리는 코드의 복잡성을 줄이고 데이터 흐름을 예측 가능하게 만드는 데 큰 도움이 되었습니다.
+
+- 무엇보다 React Native의 네이티브 연동성에 대한 실무 역량을 키운 것이 가장 큰 성과입니다. Toss Payments와 같은 외부 SDK를 연동하는 과정에서, 단순한 JavaScript 코드 작성을 넘어 네이티브 레벨의 이해가 필수적임을 깨달았습니다. WebView에서의 특정 URL 스킴 처리, 외부 앱 호출을 위한 app.json의 queries 권한 설정, 그리고 네이티브 코드 수정을 적용하기 위한 Expo의 개발 빌드(run:android) 등 JavaScript와 네이티브 모듈 사이의 상호작용을 직접 다루었습니다. 이 과정에서 발생한 Java 버전 문제나 앱 서명 충돌과 같은 예기치 못한 빌드 오류들을 해결하며, 문제의 근본 원인을 파악하고 해결하는 디버깅 능력을 길렀습니다.
+
+- 백엔드 API 명세가 변경되거나(예: 페이지네이션 도입), 예상치 못한 응답 구조를 마주했을 때, 네트워크 요청부터 데이터 파싱, 그리고 UI 렌더링까지 이어지는 과정을 체계적으로 디버깅하며 문제를 해결하는 능력을 길렀습니다. "길게 눌러서 삭제"와 같이 사용자 경험을 최우선으로 고려한 인터랙션을 구현하며, 좋은 UX가 앱의 완성도를 얼마나 높일 수 있는지 직접 체감할 수 있었습니다.
+
+- 또한, 자동 로그인 기능을 구현하며 애플리케이션의 생명주기와 비동기 상태 관리의 중요성을 깊이 체감했습니다. AsyncStorage에서 토큰을 비동기적으로 불러와 유효성을 검증하고, 그 결과에 따라 expo-router로 화면을 전환하는 과정은 복잡한 레이스 컨디션과 무한 렌더링 문제를 야기했습니다. 이 문제를 해결하기 위해 useEffect, useState, useRef 등 React 훅을 적절히 조합하고, Zustand 스토어의 상태와 Expo Router의 네비게이션 상태를 동기화하는 과정을 수없이 디버깅했습니다. 이 경험을 통해 단순한 기능 구현을 넘어, 앱의 초기 실행 흐름을 안정적으로 설계하고 예측 불가능한 상태 변화에 대응하는 능력을 기를 수 있었습니다.
+
+- 특히 프로젝트를 진행하며 Expo와 React Native 생태계의 복잡한 의존성 문제와 빌드 프로세스에 대한 깊이 있는 트러블슈팅 경험을 쌓았습니다. react@18 버전과 Expo SDK 53의 호환성 문제로 발생한 TypeError: Cannot read property 'S' of undefined와 같은 원인을 찾기 힘든 런타임 에러를 해결하기 위해, 의존성 트리를 분석하고 라이브러리 간 버전 호환성을 맞추는 체계적인 과정을 수행했습니다. 이 과정에서 deprecated된 expo-cli 대신 npx expo를 사용하는 최신 개발 동향을 따르고, ERESOLVE와 같은 npm 의존성 충돌을 해결하며 패키지 매니저에 대한 이해도를 높였습니다.
+
+- 또한, 코드의 확장성과 유지보수성을 높이기 위한 아키텍처 개선에 대해 고민하는 계기가 되었습니다. Axios 인터셉터에서 API 모듈을 순환 참조(Circular Dependency)하여 발생한 문제를 분석하고, 관련 로직을 분리하여 의존성 사이클을 끊어내는 리팩토링을 진행했습니다. 이는 단순히 기능을 구현하는 것을 넘어, 모듈 간의 결합도를 낮추고 코드 구조를 견고하게 설계하는 것의 중요성을 깨닫게 해주었습니다. 전역 상태 초기화 로직을 커스텀 훅으로 분리했던 경험과 더불어, 클린 아키텍처에 대한 실질적인 고민과 실천으로 이어졌습니다.
+
+- Git LFS, 병합 충돌 등 협업 과정에서 발생할 수 있는 문제들을 직접 해결하며 버전 관리 시스템에 대한 실무적인 이해도를 높이는 계기가 되었습니다. 이번 프로젝트 경험을 바탕으로, 앞으로도 안정적이고 확장 가능하며 사용자 중심적인 애플리케이션을 개발하는 데 기여하고 싶습니다.
+
+
 
