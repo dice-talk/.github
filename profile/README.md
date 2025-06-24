@@ -12,11 +12,11 @@
 
 | 강민지 | 구본석 | 남택호 [팀장]                                                 | 여승아                                                 |
 |--|--|-----------------------------------------------------|-----------------------------------------------------|
-| <img src="/assets/members/Kang.jpg" width="100px"/> | <img src="/assets/members/Koo.jpg" width="100px" /> | <img src="/assets/members/Nam.jpg" width="100px" /> | <img src="/assets/members/Yeo.jpg" width="100px" /> |
+| <img src="../assets/members/Kang.jpg" width="100px"/> | <img src="../assets/members/Koo.jpg" width="100px" /> | <img src="../assets/members/Nam.jpg" width="100px" /> | <img src="../assets/members/Yeo.jpg" width="100px" /> |
 | [@KangMinJi](https://github.com/minggiK) | [@6feetlife](https://github.com/6feetlife) | [@NamTaekHo](https://github.com/NamTaekHo)          | [@YeoSeungA](https://github.com/YeoSeungA )         |
 
 ## 🏗️ 프로젝트 아키텍처
-  <img src="/assets/docs/architecture.svg" width="80%" />
+  <img src="../assets/docs/architecture.svg" width="80%" />
 
 
 ## 🔧 Development Setup
@@ -102,7 +102,7 @@
 
 ### ERD
 
- <img src="/assets/docs/LogBe_I_DB.png" width="50%"/>
+ <img src="../assets/docs/Erd.png" width="100%"/>
 
 ## 🚩 서비스 구현 기능
 ### 📱 주요 기능(App)
@@ -165,6 +165,11 @@
 ## 📌 주요 기능 
 ### 1. WebSocket을 사용한 실시간 채팅 구현
 
+- STOMP 웹소켓에 연결하여 특정 채팅방 토픽을 구독하고, 오가는 메시지들을 특정 경로로 소켓 발행하여 백엔드에서 메시지들을 DB에 저장 후 채팅방 구독자들에게 전송하는 방식으로 구현.
+- 채팅 대기열(Queue): Redis 등을 활용한 전역 리스트로 현재 대기중인 사용자들을 관리한다.
+기다리는 사용자가 선택한 옵션에 맞는 대기열이 없다면 대기열을 생성하고, 있다면 추가.
+인원수가 조건에 충족되었을때 채팅방을 생성하고 대기중인 회원들을 채팅방으로 이동시키는 기능 구현
+
 ### 2. Toss Payments 연동 (본인인증 및 결제)
 
 - 본인인증: 아이디/비밀번호 찾기 프로세스에 Toss Payments의 본인인증 기능을 연동하여 사용자 계정의 보안을 강화했습니다.
@@ -190,7 +195,7 @@
     - 공지사항 목록 조회
     - 첨부파일 등록
 - 프로필 관리
-  
+
     - 닉네임 설정
     - 생년월일 설정
     - 지역 설정
