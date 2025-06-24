@@ -117,27 +117,27 @@
 
 | 채팅 | 채팅룸 나가기 |
 |-------------------------------------------------------------------|--------------------------------------------------------|
-| <img src="../assets/diceTalk_chat.gif" width="100" /> | <img src="../assets/exitClear.gif" width="100" /> |
+| <img src="../assets/diceTalk_chat.gif" width="250" /> | <img src="../assets/exitClear.gif" width="250" /> |
 
 | 채팅 이벤트1 | 채팅 이벤트1 결과 확인                                                      |
 |---------------------------------------------------------|----------------------------------------------------------------|
-| <img src="../assets/pickMessagePost.gif" width="100" /> | <img src="../assets/pickCheck.gif" width="100" />|
+| <img src="../assets/pickMessagePost.gif" width="250" /> | <img src="../assets/pickCheck.gif" width="250" />|
 
 | 채팅 이벤트2 | 채팅 이벤트2 결과 확인                                                      |
 |---------------------------------------------------------|----------------------------------------------------------------|
-| <img src="../assets/pickPost.gif" width="100" /> | <img src="../assets/lastEventCheck.gif" width="100" />|
+| <img src="../assets/pickPost.gif" width="250" /> | <img src="../assets/lastEventCheck.gif" width="250" />|
 
 | 채팅 이벤트2 | 채팅 이벤트2 결과 확인                                                      |
 |---------------------------------------------------------|----------------------------------------------------------------|
-| <img src="../assets/pickPost.gif" width="100" /> | <img src="../assets/lastEventCheck.gif" width="100" />|
+| <img src="../assets/pickPost.gif" width="250" /> | <img src="../assets/lastEventCheck.gif" width="250" />|
 
 | 채팅 이벤트2 missMatch 결과                                                |
 |----------------------------------------------------------------|
-| <img src="../assets/lastPickCheck.gif" width="100" />|
+| <img src="../assets/lastPickCheck.gif" width="250" />|
 
 | 신고하기 |
 |-----------------------------------------------------------|
-| <img src="../assets/sidebar_alert.gif" width="100" />|
+| <img src="../assets/sidebar_alert.gif" width="250" />|
 
 | 히스토리 (1대 1 채팅) | 히스토리 (하트 히스토리) |
 |--------------------------------------------------------|-------------------------------------------------|
