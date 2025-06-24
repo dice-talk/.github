@@ -16,7 +16,7 @@
 | [@KangMinJi](https://github.com/minggiK) | [@6feetlife](https://github.com/6feetlife) | [@NamTaekHo](https://github.com/NamTaekHo)          | [@YeoSeungA](https://github.com/YeoSeungA )         |
 
 ## 🏗️ 프로젝트 아키텍처
-  <img src="/assets/docs/architecture.png" width="80%" />
+  <img src="/assets/docs/architecture.svg" width="80%" />
 
 
 ## 🔧 Development Setup
@@ -383,7 +383,7 @@
 - **ERD**  
   [📊 ERD 링크 (dbdiagram.io)](https://dbdiagram.io/d/67d3773075d75cc8440765fb)
 
-[//]: # (  ![ERD 캡처]&#40;./Log-Be-I_ERD.pdf&#41;)
+<img src="/assets/docs/architecture.svg" width="80%" />
 
 - **칸반보드 (GitHub Projects)**
     - (https://github.com/orgs/dice-talk/projects/1)
