@@ -383,7 +383,7 @@
 - **ERD**  
   [📊 ERD 링크 (dbdiagram.io)](https://dbdiagram.io/d/67d3773075d75cc8440765fb)
 
-<img src="/assets/docs/architecture.svg" width="80%" />
+<img src="/assets/docs/Erd.png" width="80%" />
 
 - **칸반보드 (GitHub Projects)**
     - (https://github.com/orgs/dice-talk/projects/1)
