@@ -13,6 +13,7 @@
 | 강민지 | 구본석 | 남택호 [팀장]                                                 | 여승아                                                 |
 |--|--|-----------------------------------------------------|-----------------------------------------------------|
 | <img src="../assets/members/Kang.jpg" width="100px"/> | <img src="../assets/members/Koo.jpg" width="100px" /> | <img src="../assets/members/Nam.jpg" width="100px" /> | <img src="../assets/members/Yeo.jpg" width="100px" /> |
+| <img src="../assets/members/Kang.jpg" width="100px"/> | <img src="../assets/members/Koo.jpg" width="100px" /> | <img src="../assets/members/Nam.jpg" width="100px" /> | <img src="../assets/members/Yeo.jpg" width="100px" /> |
 | [@KangMinJi](https://github.com/minggiK) | [@6feetlife](https://github.com/6feetlife) | [@NamTaekHo](https://github.com/NamTaekHo)          | [@YeoSeungA](https://github.com/YeoSeungA )         |
 
 ## 🏗️ 프로젝트 아키텍처
@@ -103,17 +104,18 @@
 ### ERD
 
  <img src="../assets/docs/Erd.png" width="100%"/>
+ <img src="../assets/docs/Erd.png" width="50%"/>
 
 ## 🚩 서비스 구현 기능
 ### 📱 주요 기능(App)
 
-| 앱 실행                                              | 로그인                                             |
+| 회원가입                                              | 아이디 찾기                                             |
 |---------------------------------------------------|-------------------------------------------------|
-|  |  |
+| <img src="../assets/register.gif" width="250"> | <img src="../assets/findEmail.gif" width="250"> |
 
-| 회원가입 | 메인화면                                   |
+| 비밀번호 찾기 | 메인화면                                   |
 |------|---------------------------------------------------|
-| 내용1  | 내용2|
+| <img src="../assets/findPassword.gif" width="250">  | <img src="../assets/mainNotification.gif" width="250">|
 
 | 채팅 | 채팅룸 나가기 |
 |-------------------------------------------------------------------|--------------------------------------------------------|
@@ -139,25 +141,22 @@
 |-----------------------------------------------------------|
 | <img src="../assets/sidebar_alert.gif" width="250" />|
 
-| 히스토리 (1대 1 채팅) | 히스토리 (하트 히스토리) |
+| 히스토리  | 마이페이지 정보 수정 |
 |--------------------------------------------------------|-------------------------------------------------|
-|  |  |
+| <img src="../assets/history.gif" width="250"> | <img src="../assets/myprofile.gif" width="250"> |
 
 | 마이페이지 문의하기 | 마이페이지 결제 및 사용 내용  |
 |--------------------------------------------------------|-------------------------------------------------|
-|  |  |
+| <img src="../assets/question.gif" width="250">  | <img src="../assets/usePayment.gif" width="250"> |
 
 | 마이페이지 결제하기 | 공지사항 조회  |
 |--------------------------------------------------------|-------------------------------------------------|
-|  |  |
+| <img src="../assets/charge.gif" width="250"> | <img src="../assets/notice.gif" width="250"> |
 
 | 비회원 문의하기 | Push 알림  |
 |--------------------------------------------------------|-------------------------------------------------|
-|  |  |
+|  <img src="../assets/noMemberQuestion.gif" width="250"> |  <img src="../assets/alert.gif" width="250"> |
 
-| ????? | ?????  |
-|--------------------------------------------------|-------------------------------------------------------------|
-|  |  |
 
 ### 🖥️ 주요 기능(Web)
 
@@ -517,8 +516,8 @@
 
 - **ERD**  
   [📊 ERD 링크 (dbdiagram.io)](https://dbdiagram.io/d/67d3773075d75cc8440765fb)
-
-<img src="/assets/docs/Erd.png"/>
+  
+  [//]: # (  ![ERD 캡처]&#40;./Log-Be-I_requirment.pdf&#41;)
 
 
 ## 📝 프로젝트 회고
