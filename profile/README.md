@@ -103,7 +103,6 @@
 ### ERD
 
  <img src="../assets/docs/Erd.png" width="100%"/>
- <img src="../assets/docs/Erd.png" width="50%"/>
 
 ## 🚩 서비스 구현 기능
 ### 📱 주요 기능(App)
